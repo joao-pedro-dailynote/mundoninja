@@ -45,7 +45,7 @@ header .menu{
 }
 
 header .menu li{
-    padding-left: 3rem;
+    margin-left: 3rem;
     font-family: 'Roboto',sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
@@ -134,30 +134,32 @@ main .video-section{
 .register-section{
     position: relative;
     display: flex;
-    justify-content: left;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     color: #f9a112;
-    background-color: rgba(0, 0, 0, 0.735);
     height: fit-content;
     width: 100%;
     padding: 9rem;
     margin-top: 50rem;
     text-transform: uppercase;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.852);
+    overflow: hidden;
 }
 
 .register-section h2{
-    font-size: 3.4rem;
+    width: fit-content;
+    font-size: 4.2rem;
     font-weight: 600;
     font-family: "Montserrat";
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     margin-bottom: 1.5rem;
 }
 
 .register-section > p{
     text-align: center;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Montserrat";
     width: 30rem;
     margin-bottom: 1.5rem;
@@ -166,8 +168,8 @@ main .video-section{
 .register-section .register-btn{
     display: flex;
     width: fit-content;
-    padding: 0.8rem 2.6rem;
-    margin: 1.5rem 0 0 5rem;
+    padding: 0.8rem 2.8rem;
+    margin-left: 5rem;
     border-radius: 1rem;
     color: #fff;
     font-size: 2.1rem;
@@ -208,8 +210,259 @@ main .video-section{
 }
 
 
-@media (min-width: 1280) and (max-width: 1920) {
+@media (min-width: 1280px) and (max-width: 1920px) {
     .iframe-wrapper{
         width: 120rem;
     }
+}
+
+@media (max-width: 800px){
+    html{
+        font-size: 55%;
+    }
+
+    header .logo {
+        position: absolute;
+        left: 2.7rem;
+    }
+
+    header .menu {
+        position: absolute;
+        right: 2rem;
+        display: flex;
+    }
+
+    .video-section .video-iframe .iframe-wrapper {
+        width: calc(80rem - 10px);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 650px){
+    html{
+        font-size: 45%;
+    }
+
+    body{
+        background-size: 100% 100%;
+    }
+
+    header .menu{
+        margin-left: 3rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 250ms ease-in;
+    }
+
+    header .menu a{
+        padding: 0.3rem 0.8rem;
+    }
+
+    .video-section .video-iframe .iframe-wrapper {
+        width: calc(52rem - 10px);
+        height: 56rem;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .register-section{
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        padding: 9rem 3rem;
+
+    }
+
+    .register-section h2{
+        font-size: 2.1rem;
+    }
+
+    .register-section p{
+        font-size: 1rem;
+        text-align: left;
+        width: 20rem;
+    }
+
+    .register-section .register-section-img {
+        position: absolute;
+        top: 8rem;
+        right: 1.5rem;
+        display: flex;
+        justify-content: center;
+        height: 20rem;
+        width: 28rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .register-section .register-section-img img{
+        border-radius: 10px;
+    }
+
+    .register-section .register-btn {
+        text-align: center;
+        max-width: 12rem;
+        /* padding: 0.8rem 1.5rem; */
+        margin: 0;
+        border-radius: 1rem;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        background-color: #f9a112;
+        border: none;
+        cursor: pointer;
+        transition: 350ms ease-out;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 40%;
+    }
+}
+
+
+
+       /*  .register-section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #f9a112;
+            /* height: fit-content;
+            width: 100%;
+            /* padding: 9rem;
+            margin-top: 50rem;
+            text-transform: uppercase;
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(imgs/Naruto-x-Boruto-Connections.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-position-y: -60px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+    
+        .register-section h2 {
+            width: fit-content;
+            font-size: 4.2rem;
+            font-weight: 600;
+            font-family: "Montserrat";
+            /* margin-left: 3rem; 
+            margin-bottom: 1.5rem;
+        }
+    
+        .register-section>p {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 300;
+            font-family: "Montserrat";
+            width: 30rem;
+            margin-bottom: 1.5rem;
+        }
+    
+        .register-section .register-btn {
+            display: flex;
+            width: fit-content;
+            padding: 0.8rem 2.8rem;
+    
+            border-radius: 1rem;
+            color: #fff;
+            font-size: 2.1rem;
+            font-weight: 600;
+            background-color: #f9a112;
+            border: none;
+            cursor: pointer;
+            transition: 350ms ease-out;
+        }
+    
+        .register-section .register-btn:hover {
+            transform: scale(1.1);
+        }
+    
+        .register-section .register-btn i {
+            font-size: 1.4rem;
+            margin-right: 1rem;
+            color: #e92111;
+        }
+    
+        .register-section .register-section-img {
+            position: absolute;
+            top: 4rem;
+            right: 6rem;
+            display: flex;
+            justify-content: center;
+            height: 30rem;
+            width: 40rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+    
+        .register-section .register-section-img img {
+            max-height: inherit;
+            max-width: inherit;
+            object-fit: cover;
+            object-position: center center;
+        } */
+
+
+    
+    /* .register-section{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 9rem 0rem;
+        margin-top: 50rem;
+    }
+
+    .register-section h2 {
+        font-size: 2.1rem;
+        font-weight: 600;
+        font-family: "Montserrat";
+        margin-left: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .register-section > p {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+        font-family: "Montserrat";
+        width: 20rem;
+    }
+
+    .register-section .register-btn{
+        padding: 0.8rem 1.5rem;
+        margin: 1.5rem 0 0 2rem;
+        border-radius: 1rem;
+        color: #ffffff;
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+
+
+    .register-section .register-section-img{
+        position: relative;
+        background-color: #b3150a;
+        top: 3rem;
+        right: 0rem;
+        height: 20rem;
+        width: 40rem;
+        border-radius: 0.5rem;
+        overflow: hidden;   
+    }
+
+    .register-section .register-section-img img{
+        height: inherit;
+        width: inherit;
+        object-fit: fill;
+        object-position: center center;
+    } */
+
 }
