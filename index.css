@@ -22,11 +22,14 @@ body{
     background-size: cover;
     background-position-y: 0px;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 header{
+    position: relative;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 7rem;
     width: 100%;
     padding: 1.8rem 0;
@@ -36,6 +39,14 @@ header{
 header .logo{
     position: absolute;
     left: 4.7rem;
+    height: 10rem;
+    width: 10rem;
+    z-index: 9999;
+}
+
+header .logo img{
+    height: inherit;
+    width: inherit;
 }
 
 header .menu{
@@ -70,21 +81,27 @@ main{
     width: 100%;
 }
 
-main .logo{
+main .hero-logo{
+    position: relative;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 6rem;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.hero-logo img{
+    height: 50rem;
 }
 
 main .video-section{
     position: relative;
-    top: 50rem;
     height: fit-content;
     width: 100%;
     background-color: #f9a112;
     padding-bottom: 6rem;
-    margin-bottom: 3rem;
     z-index: 2;
 }
 
@@ -140,7 +157,6 @@ main .video-section{
     height: fit-content;
     width: 100%;
     padding: 9rem;
-    margin-top: 50rem;
     text-transform: uppercase;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.852);
@@ -242,10 +258,6 @@ main .video-section{
 @media (max-width: 650px){
     html{
         font-size: 45%;
-    }
-
-    body{
-        background-size: 100% 100%;
     }
 
     header .menu{
@@ -464,5 +476,3 @@ main .video-section{
         object-fit: fill;
         object-position: center center;
     } */
-
-
