@@ -96,7 +96,7 @@ main .hero-logo{
     height: 50rem;
 }
 
-main .video-section{
+main .carrossel-section{
     position: relative;
     height: fit-content;
     width: 100%;
@@ -105,7 +105,7 @@ main .video-section{
     z-index: 2;
 }
 
-.video-section .text-preiframe{
+.carrossel-section .text-preiframe{
     padding: 3rem 0;
     margin-bottom: 6rem;
     text-align: center;
@@ -113,14 +113,14 @@ main .video-section{
     max-width: 100%;
 }
 
-.video-section .text-preiframe h2{
+.carrossel-section .text-preiframe h2{
     font-weight: 600;
     color: #fff;
     font-size: 3.4rem;
     margin-bottom: 1.5rem;
 }
 
-.video-section .text-preiframe p{
+.carrossel-section .text-preiframe p{
     margin: 0 auto;
     color: #fff;
     font-weight: 600;
@@ -129,14 +129,85 @@ main .video-section{
     max-width: 60rem;
 }
 
-.video-section .video-iframe{
+.featured-property-carousel-section {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 117rem;
+    height: auto;
+    margin: auto auto;
+}
+
+.featured-property-carousel-section .carousel-images-wrapper {
+    position: relative;
+    height: 36rem;
+    width: 100%;
+    z-index: 0;
+}
+
+.carousel-images-wrapper .carousel-controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    opacity: 0;
+}
+
+.carousel-images-wrapper:hover>.carousel-controls {
+    opacity: 1;
+}
+
+.carousel-controls button {
+    height: 100%;
+    width: 6rem;
+    border: none;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.carousel-images-wrapper .carousel-imgs {
+    position: absolute;
+    display: flex;
+    height: 36rem;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.carousel-imgs .item{
+    height: 36rem;
+    min-width: 117rem;
+    transition: 850ms ease-in-out;
+}
+
+.item:first-child{
+    margin-left: -100%;
+}
+
+.carousel-imgs .item img{
+    height: 36rem;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* .carousel-images-wrapper .carousel-imgs .Image-link:first-child {
+    margin-left: -100%;
+} */
+
+/* .carrossel-section .video-iframe{
     display: flex;
     justify-content: center;
     height: fit-content;
     width: 100%;
 }
 
-.video-section .video-iframe .iframe-wrapper{
+.carrossel-section .video-iframe .iframe-wrapper{
     width: calc(117rem - 10px);
     border-radius: 10px;
     overflow: hidden;
@@ -146,7 +217,7 @@ main .video-section{
     height: 66.8rem;
     width: 100%;
     border-radius: 10px;
-}
+} */
 
 .register-section{
     position: relative;

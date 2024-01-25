@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/34a71bdd62.js" crossorigin="anonymous"></script>
+    <script src="/carousel_images/Carousel_images.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
     <title>Document</title>
@@ -25,7 +26,7 @@
         <div class="hero-logo">
             <img src="imgs/Mundo Ninja_Prancheta 1.webp" alt="">
         </div>
-        <section class="video-section">
+        <section class="carrossel-section">
             <div class="text-preiframe">
                 <h2>🍃🈴 Mundo Ninja 🈴🍃</h2>
                 <p>     
@@ -45,14 +46,28 @@
                 Esperamos você no mundo de Naruto, não perca mais tempo e venha se divertir com seu personagem ou clã favorito da obra
                 de Masashi Kishimoto.</p>
             </div>
-            <div class="video-iframe" id="VideoIframe">
+
+            <section class="featured-property-carousel-section" id="FeaturedPropertyCarouselSection">
+                <div class="carousel-images-wrapper" id="CarouselImagesWrapper">
+                    <div class="carousel-controls" id="CarouselControls">
+                        <button type="button" class="left-control-button" id="PreviousImgButton">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="right-control-button" id="NextImgButton">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-imgs" id="CarouselImgs"></div>
+                </div>
+            </section>
+            <!-- <div class="video-iframe" id="VideoIframe">
                 <div class="iframe-wrapper">
                     <iframe src="https://www.youtube.com/embed/qzCNxmMTAR4?si=va2t0rE7TW9SUiX_" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
                 </div>
-            </div>
+            </div> -->
         </section>
     </main>
 
