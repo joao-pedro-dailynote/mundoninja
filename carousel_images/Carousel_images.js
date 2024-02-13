@@ -1,4 +1,4 @@
-    'use strict';
+/* 'use strict';
 
 const images = [
     {'id': '1', 'url':'/imgs/background.jpg'},
@@ -22,16 +22,19 @@ const loadImgs = (images, imgsContainer) =>{
 loadImgs(images, imgsContainer);
 let items = document.querySelectorAll(".item");
 
-const previousImg = () =>{
+const nextImg = () =>{
     imgsContainer.appendChild(items[0]);
     items = document.querySelectorAll(".item");
 }
 
-const nextImg = () =>{
+const previousImg = () =>{
     const lastImg = items[items.length - 1];
     imgsContainer.insertBefore(lastImg, items[0]);
     items = document.querySelectorAll(".item");
 };
 
-document.getElementById("NextImgButton").addEventListener("click", previousImg);
-document.getElementById("PreviousImgButton").addEventListener("click", nextImg);
+document.getElementById("NextImgButton").addEventListener("click", nextImg);
+document.getElementById("PreviousImgButton").addEventListener("click", previousImg);
+
+setInterval(nextImg, 5000)
+ */

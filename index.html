@@ -6,13 +6,14 @@
     <script src="https://kit.fontawesome.com/34a71bdd62.js" crossorigin="anonymous"></script>
     <script src="/carousel_images/Carousel_images.js" defer></script>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="teste.css">
+    <script src="mobile-menu.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="imgs/Mundo Ninja_Prancheta 1.webp" alt="">
+            <img src="imgs/Mundo-Ninja_Prancheta-1.webp" alt="">
         </div>
         <ul class="menu">
             <li ><a href="#VideoIframe">Trailer</a></li>
@@ -20,11 +21,26 @@
             <li><a href="#">Wiki</a></li>
             <li><a href="#">Login</a></li>
         </ul>
+        <div class="mobile-menu-buttons">
+            <button class="open-menu-button" id="OpenMenuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="close-menu-button" id="CloseMenuButton">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <ul class="mobile-menus" id="MobileMenus">
+            <li><a href="#VideoIframe">Trailer</a></li>
+            <li><a href="#DownloadSection">Baixar</a></li>
+            <li><a href="#">Wiki</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
     </header>
 
     <main>
-        <div class="hero-logo">
-            <img src="imgs/Mundo Ninja_Prancheta 1.webp" alt="">
+        <div class="hero-banner">
+            <div class="banner-img"></div>
+            <!-- <img src="imgs/Mundo-Ninja_Prancheta-1.webp" alt=""> -->
         </div>
         <section class="carrossel-section">
             <div class="text-preiframe">
@@ -47,27 +63,7 @@
                 de Masashi Kishimoto.</p>
             </div>
 
-            <section class="featured-property-carousel-section" id="FeaturedPropertyCarouselSection">
-                <div class="carousel-images-wrapper" id="CarouselImagesWrapper">
-                    <div class="carousel-controls" id="CarouselControls">
-                        <button type="button" class="left-control-button" id="PreviousImgButton">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-                        <button class="right-control-button" id="NextImgButton">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                    </div>
-                    <div class="carousel-imgs" id="CarouselImgs"></div>
-                </div>
-            </section>
-            <!-- <div class="video-iframe" id="VideoIframe">
-                <div class="iframe-wrapper">
-                    <iframe src="https://www.youtube.com/embed/qzCNxmMTAR4?si=va2t0rE7TW9SUiX_" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div> -->
+            
         </section>
     </main>
 
@@ -76,7 +72,7 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime magnam quas saepe! Libero beatae amet quisquam
             possimus sint, a enim!</p>
         <button class="register-btn" id="RegisterBtn">
-            <p>Cadastre-se</p>
+            Cadastre-se
         </button>
         <div class="register-section-img">
             <img src="imgs/Naruto-x-Boruto-Connections.jpg" alt="">

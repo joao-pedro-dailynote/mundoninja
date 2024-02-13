@@ -1,0 +1,132 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(imgs/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    padding: 1.8rem 0;
+    background-color: #f9a112;
+}
+
+header .logo{
+    position: absolute;
+    left: 4.7rem;
+    height: 10rem;
+    width: 10rem;
+    z-index: 9999;
+}
+
+header .logo img{
+    height: inherit;
+    width: inherit;
+}
+
+
+
+header .hamburguer-menu-buttons button{
+    position: absolute;
+    display: none;
+    right: 3rem;
+    bottom: 1.5rem;
+    width: 4rem;
+    cursor: pointer;
+    font-size: 3rem;
+    border: none;
+    color: #FFF;
+    background-color: transparent;
+}
+
+header .menu{
+    position: absolute;
+    right: 12rem;
+    display: flex;
+}
+
+header .menu li{
+    margin-left: 3rem;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+header .menu a{
+    border: 1px solid #b3150a;
+    border-radius: 5px;
+    padding: 0.8rem 3rem;
+    box-shadow: 10px 2px #de1607;
+    color: #ffffff;
+}
+
+header .menu li:hover{
+    transform: scale(1.1);
+}
+
+.hero-banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-banner .banner-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    overflow: visible;
+    z-index: 1110;
+}
+
+.introduction-section{
+    position: relative;
+    text-align: center;
+    padding: 3rem 4.7rem;
+    background-color: #f9a112;
+    color: #303030;
+}
+
+.introduction-section h2{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.introduction-section p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+ */
